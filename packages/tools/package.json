@@ -1,0 +1,10 @@
+{
+  "name": "@tsunamiii/tools",
+  "version": "1.0.0",
+  "author": "Limerio",
+  "license": "MIT",
+  "private": true,
+  "files": [
+    ".prettierrc.js"
+  ]
+}

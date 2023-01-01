@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@tsunamiii/*": ["./packages/*/src"]
+    }
+  }
+}

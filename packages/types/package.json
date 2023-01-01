@@ -1,0 +1,21 @@
+{
+  "name": "@tsunamiii/types",
+  "version": "1.0.0",
+  "description": "Global types",
+  "main": "dist",
+  "typings": "dist",
+  "author": "Limerio",
+  "license": "MIT",
+  "private": true,
+  "prettier": "@tsunamiii/tools/.prettierrc.js",
+  "scripts": {
+    "format": "prettier --write src",
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json -w"
+  },
+  "devDependencies": {
+    "@tsunamiii/tools": "*",
+    "prettier": "2.8.1",
+    "typescript": "4.9.4"
+  }
+}

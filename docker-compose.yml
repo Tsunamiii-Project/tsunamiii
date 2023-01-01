@@ -1,0 +1,47 @@
+version: '3.2'
+
+services:
+  database:
+    image: mongo:latest
+    volumes:
+      - database:/data/db
+      - ./config/mongod.conf:/etc/mongo/mongod.conf
+    ports:
+      - "27017:27017"
+    networks:
+      - tsunami
+
+  rabbitmq:
+    image: rabbitmq:alpine
+    ports:
+      - 5672:5672
+      - 8080:8080
+    networks:
+      - tsunami
+
+  redis:
+    image: redis:7.0.5-alpine
+    ports:
+      - 6379:6379
+    networks:
+      - tsunami
+
+
+  caddy:
+    image: caddy
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+    volumes:
+      - /site:/srv
+      - caddy_data:/data
+      - ./config/caddy:/config/caddy
+      - ./config/Caddyfile:/etc/caddy/Caddyfile
+
+networks:
+  tsunami:
+
+volumes:
+  database:
+  caddy_data:

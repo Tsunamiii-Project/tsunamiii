@@ -1,0 +1,23 @@
+{
+  "name": "tsunamiii",
+  "version": "1.0.0",
+  "repository": "https://github.com/Tsunamiii-Project/tsunamiii.git",
+  "author": "Limerio <44976231+Limerio@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev --parallel"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "1.6.3"
+  }
+}
