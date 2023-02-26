@@ -1,0 +1,23 @@
+{
+	"name": "scanner",
+	"version": "1.0.0",
+	"author": "Limerio <44976231+Limerio@users.noreply.github.com>",
+	"private": true,
+	"types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
+	"scripts": {
+		"clean": "rimraf ./dist",
+		"build:tsc": "tsc -p tsconfig.build.json",
+		"build": "npm run clean -- && npm run build:tsc",
+		"dev": "run-p dev:*",
+		"dev:build": "npm run build:tsc -- -w",
+		"dev:start": "nodemon dist/index.js --watch dist"
+	},
+	"devDependencies": {
+		"@types/node": "^18.14.1",
+		"nodemon": "^2.0.20",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^4.1.2",
+		"typescript": "^4.9.5"
+	}
+}
