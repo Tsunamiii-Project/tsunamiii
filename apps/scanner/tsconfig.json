@@ -1,11 +1,13 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "module": "commonjs",
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"module": "commonjs",
 		"declaration": true,
 		"removeComments": true,
 		"target": "ESNext",
 		"outDir": "./dist",
+		"resolveJsonModule": true,
+		"types": ["jest"],
 		"noEmit": false
-  }
+	}
 }
