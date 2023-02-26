@@ -17,7 +17,7 @@
 	},
 	"workspaces": [
 		"apps/*",
-		"packages/*"
+		"libs/*"
 	],
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.53.0",
