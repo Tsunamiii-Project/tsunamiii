@@ -3,7 +3,7 @@ import type { TestingModule } from '@nestjs/testing'
 import { Test } from '@nestjs/testing'
 import { AppModule } from '../src/app.module'
 
-describe('AppController (e2e)', () => {
+describe('App (e2e)', () => {
 	let app: INestApplication
 
 	beforeEach(async () => {

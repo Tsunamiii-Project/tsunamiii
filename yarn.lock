@@ -2419,6 +2419,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api@workspace:apps/api"
   dependencies:
+    "@jest/types": ^29.4.3
     "@nestjs/cli": ^9.0.0
     "@nestjs/common": ^9.0.0
     "@nestjs/core": ^9.0.0
