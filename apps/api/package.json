@@ -12,9 +12,10 @@
 		"start": "nest start",
 		"dev": "npm start -- --watch",
 		"start:prod": "node dist/apps/nestjs/src/main",
-		"test": "jest --config ./jest.json",
+		"test": "jest --config ./jest.config.ts",
 		"test:watch": "npm run test -- --watch",
-		"test:e2e": "jest --config ./test/jest-e2e.json",
+		"test:cov": "npm run test -- --coverage",
+		"test:e2e": "jest --config ./e2e/jest-e2e.config.ts",
 		"test:e2e:watch": "npm run test:e2e -- --watch"
 	},
 	"dependencies": {

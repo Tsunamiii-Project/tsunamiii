@@ -7,6 +7,9 @@
 		"test": {
 			"outputs": []
 		},
+		"test:cov": {
+			"outputs": []
+		},
 		"test:e2e": {
 			"outputs": []
 		},
