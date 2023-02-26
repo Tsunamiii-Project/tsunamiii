@@ -1,17 +1,16 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "declaration": true,
-    "noEmitOnError": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "types": [],
-    "jsx": "react",
-    "noEmit": false
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
+		"noEmitOnError": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"types": [],
+		"jsx": "react",
+		"noEmit": false
+	},
+	"exclude": ["node_modules", "dist"]
 }

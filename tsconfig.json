@@ -1,10 +1,11 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "noEmit": true,
-    "baseUrl": ".",
-    "paths": {
-      "@tsunamiii/*": ["./packages/*/src"]
-    }
-  }
+	"extends": "./tsconfig.build.json",
+
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@tsunamiii/*": ["packages/*/src"]
+		},
+		"noEmit": true
+	}
 }
