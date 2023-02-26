@@ -10,12 +10,7 @@ module.exports = {
 		'plugin:react/recommended',
 	],
 	parser: '@typescript-eslint/parser',
-	plugins: [
-		'@typescript-eslint',
-		'prettier',
-		'react',
-		'react-hooks',
-	],
+	plugins: ['@typescript-eslint', 'prettier', 'react', 'react-hooks'],
 	env: {
 		es2022: true,
 		node: true,
