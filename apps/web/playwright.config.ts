@@ -31,16 +31,16 @@ const config: PlaywrightTestConfig = {
 			},
 		},
 		{
-		  name: 'Desktop Firefox',
-		  use: {
-		    ...devices['Desktop Firefox'],
-		  },
+			name: 'Desktop Firefox',
+			use: {
+				...devices['Desktop Firefox'],
+			},
 		},
 		{
-		  name: 'Desktop Safari',
-		  use: {
-		    ...devices['Desktop Safari'],
-		  },
+			name: 'Desktop Safari',
+			use: {
+				...devices['Desktop Safari'],
+			},
 		},
 		{
 			name: 'Mobile Chrome',
